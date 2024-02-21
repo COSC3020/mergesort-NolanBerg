@@ -1,15 +1,13 @@
-const fs = require('fs');
 const jsc = require('jsverify');
+const { insertionSortReverse } = require('./code.js');
 
-eval(fs.readFileSync('code.js')+'');
+const testSort = jsc.forall('array nat', function (arr) {
 
-const testSort =
-    jsc.forall("array nat", function(arr) {
-        var a1 = JSON.parse(JSON.stringify(arr));
-        var a2 = JSON.parse(JSON.stringify(arr));
-        return JSON.stringify(mergesort(a1)) ==
-            JSON.stringify(a2.sort(function(a, b)
-                { return a - b; }));
-    });
+    insertionSortReverse(arr);
+
+    const isAscending = arr.every((value, index) => index === 0 || value >= arr[index - 1]);
+
+    return isAscending;
+});
 
 jsc.assert(testSort);
