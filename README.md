@@ -91,9 +91,7 @@ width *= 2
     
 return arr
 
-
-
-
+.
 
 
 merge sort test code:
