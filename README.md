@@ -123,3 +123,4 @@ Analyse the time complexity of your implementation and give a $\Theta$ bound for
 its worst-case runtime. Add your answer, including your reasoning, to this
 markdown file.
 
+The iterative merge sort has a worst-case time complexity of Θ(n log n) because it systematically divides and merges the array in a logarithmic number of steps, with each merge operation being linear in time. This algorithm has great performance for sorting large datasets.
