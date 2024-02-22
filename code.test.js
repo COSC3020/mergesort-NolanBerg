@@ -1,9 +1,9 @@
 const jsc = require('jsverify');
-const { insertionSortReverse } = require('./code.js');
+const { mergeSort } = require('./code.js');
 
 const testSort = jsc.forall('array nat', function (arr) {
 
-    insertionSortReverse(arr);
+    mergeSort(arr);
 
     const isAscending = arr.every((value, index) => index === 0 || value >= arr[index - 1]);
 
