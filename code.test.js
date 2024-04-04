@@ -1,5 +1,5 @@
 const jsc = require('jsverify');
-const { mergesort, merge } = require('./code.js');
+const { mergesort, merge } = require('code.js');
 
 const testSort = jsc.forall('array nat', function (arr) {
 
