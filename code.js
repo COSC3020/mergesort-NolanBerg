@@ -1,10 +1,11 @@
 function merge(arr, left, mid, right) {
-
+    
     let start2 = mid + 1;
     if (arr[mid] <= arr[start2]) {
         return;
     }
-    while (left <= mid && start2 <= right) { 
+    while (left <= mid && start2 <= right) {
+         
         if (arr[left] <= arr[start2]) {
             left++;
         } else {
@@ -32,6 +33,4 @@ function mergesort(arr, l, r) {
     }
 }
 
-module.exports = { mergesort, merge };
-
-
+module.exports = mergesort;
