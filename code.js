@@ -33,4 +33,4 @@ function mergesort(arr, l, r) {
     }
 }
 
-module.exports = mergesort;
+module.exports = { mergesort }
