@@ -1,11 +1,9 @@
 function merge(arr, left, mid, right) {
-    
     let start2 = mid + 1;
     if (arr[mid] <= arr[start2]) {
         return;
     }
     while (left <= mid && start2 <= right) {
-         
         if (arr[left] <= arr[start2]) {
             left++;
         } else {
@@ -23,8 +21,7 @@ function merge(arr, left, mid, right) {
     }
 }
 
-function mergesort(arr, l, r) {
-
+function mergesort(arr, l = 0, r = arr.length - 1) {
     if (l < r) {
         let m = l + Math.floor((r - l) / 2);
         mergesort(arr, l, m);
@@ -33,4 +30,4 @@ function mergesort(arr, l, r) {
     }
 }
 
-module.exports = { mergesort }
+module.exports = { mergesort, merge };
