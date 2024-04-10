@@ -21,13 +21,17 @@ function merge(arr, left, mid, right) {
     }
 }
 
-function mergesort(arr, l = 0, r = arr.length - 1) {
-    if (l < r) {
-        let m = l + Math.floor((r - l) / 2);
-        mergesort(arr, l, m);
-        mergesort(arr, m + 1, r);
-        merge(arr, l, m, r);
+function iterativeMergesort(arr) {
+    const n = arr.length;
+    for (let curr_size = 1; curr_size < n; curr_size *= 2) {
+        for (let left_start = 0; left_start < n - 1; left_start += 2 * curr_size) {
+            const mid = Math.min(left_start + curr_size - 1, n - 1);
+            const right_end = Math.min(left_start + 2 * curr_size - 1, n - 1);
+            merge(arr, left_start, mid, right_end);
+        }
     }
+    return arr;
 }
 
-module.exports = { mergesort, merge };
+module.exports = { iterativeMergesort, merge };
+
