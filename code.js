@@ -21,7 +21,7 @@ function merge(arr, left, mid, right) {
     }
 }
 
-function iterativeMergesort(arr) {
+function mergesort(arr) {
     const n = arr.length;
     for (let curr_size = 1; curr_size < n; curr_size *= 2) {
         for (let left_start = 0; left_start < n - 1; left_start += 2 * curr_size) {
@@ -33,5 +33,5 @@ function iterativeMergesort(arr) {
     return arr;
 }
 
-module.exports = { iterativeMergesort, merge };
+module.exports = { mergesort, merge };
 
