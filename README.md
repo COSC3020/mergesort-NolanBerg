@@ -123,4 +123,4 @@ markdown file.
 
 Outer Loop (curr_size): The outer loop iterates log n times, n being the number of elements in the array. curr_size doubles in each iteration until larger than the size of the array. Therefore, the outer loop is $\Theta(log n)$.
 
-Inner Loop (left_start): The inner loop iterates over array, but the number of iterations is not fixed like n. The inner loop depends on the size of the subarrays. The number of iterations in each iteration of the outer loop is at most $\frac{n}{\text{curr\_size}}$. Therefore, the inner loop is $\Theta(n)$.
+Inner Loop (left_start): The inner loop iterates over array, but the number of iterations is not fixed like n. The inner loop depends on the size of the subarrays. The number of iterations in each iteration of the outer loop is at most $\frac{n}{\text{currsize}}$. Therefore, the inner loop is $\Theta(n)$.
