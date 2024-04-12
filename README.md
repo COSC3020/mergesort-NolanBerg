@@ -126,3 +126,7 @@ Outer Loop (curr_size): The outer loop iterates log n times, n being the number 
 Inner Loop (left_start): The inner loop iterates over array, but the number of iterations is not fixed like n. The inner loop depends on the size of the subarrays. The number of iterations in each iteration of the outer loop is at most $\frac{n}{\text{currsize}}$. Therefore, the inner loop is $\Theta(n)$.
 
 Merge Function: The merge function performs the merging of two sorted subarrays. In the worst case, it may have to move every element of the second subarray to its correct position in the first. This operation takes $\Theta(n)$ time.
+
+The overall time complexity is $\Theta(n log n)$ in the average and best cases. During the worst case when the merge operation acts similar to an insertion sort, the time complexity becomes $\Theta(n^2 log n)$. The worst case happens when the array is close to being in reverse order, causing the merge operation to work harder each iteration, leading to  $\Theta(n^2 log n)$.
+
+
