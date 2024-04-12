@@ -121,4 +121,4 @@ Analyse the time complexity of your implementation and give a $\Theta$ bound for
 its worst-case runtime. Add your answer, including your reasoning, to this
 markdown file.
 
-Outer Loop (curr_size): The outer loop iterates log n times, n being the number of elements in the array. 
+Outer Loop (curr_size): The outer loop iterates log n times, n being the number of elements in the array. curr_size doubles in each iteration until larger than the size of the array. Therefore, the outer loop is $\Theta(log n)$.
