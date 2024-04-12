@@ -121,6 +121,3 @@ Analyse the time complexity of your implementation and give a $\Theta$ bound for
 its worst-case runtime. Add your answer, including your reasoning, to this
 markdown file.
 
-The breakdown of the original array into subarrays uses a divide and conquer principle, resulting in a logarithmic time complexity, $\Theta$(log n).  
-
-This can potentially resemble insertion sort in a bad case, traversing through n elements n times, resulting in $n^2$. Consequently, the worst-case time complexity is $\Theta$(n^2 * log n).
