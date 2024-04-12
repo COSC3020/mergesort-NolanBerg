@@ -122,3 +122,5 @@ its worst-case runtime. Add your answer, including your reasoning, to this
 markdown file.
 
 Outer Loop (curr_size): The outer loop iterates log n times, n being the number of elements in the array. curr_size doubles in each iteration until larger than the size of the array. Therefore, the outer loop is $\Theta(log n)$.
+
+Inner Loop (left_start):
