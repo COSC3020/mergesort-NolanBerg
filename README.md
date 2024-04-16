@@ -127,6 +127,6 @@ Inner Loop (left_start): The inner loop iterates over array, but the number of i
 
 Merge Function: The merge function performs the merging of two sorted subarrays. In the worst case, it may have to move every element of the second subarray to its correct position in the first. This operation takes $\Theta(n)$ time.
 
-The overall time complexity is $\Theta(n log n)$ in the average and best cases. During the worst case when the merge operation acts similar to an insertion sort, the time complexity becomes $\Theta(n^2 log n)$. The worst case happens when the array is close to being in reverse order, causing the merge operation to work harder each iteration, leading to  $\Theta(n^2 log n)$.
+The overall time complexity is $\Theta(n log n)$ 
 
 
