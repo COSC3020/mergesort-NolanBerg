@@ -125,6 +125,6 @@ Outer Loop (curr_size): The outer loop iterates log n times, n being the number 
 
 Inner Loop (left_start): The inner loop iterates over array, but the number of iterations is not fixed like n. The inner loop depends on the size of the subarrays. The number of iterations in each iteration of the outer loop is at most $\frac{n}{\text{currsize}}$. Therefore, the inner loop is $\Theta(n)$.
 
-The overall time complexity is $\Theta(n log n)$ 
+The overall time complexity for the worst-case runtime is $\Theta(n log n)$.
 
 
