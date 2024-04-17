@@ -10,7 +10,7 @@ Hint: To make merge sort in-place, think about what happens during the merge --
 where are elements moved to and from? To make it iterative, think about the
 part of the array each recursive call considers.
 
-RESOURCES USED: Originally coded in python and used ai to convert to js where function takes in array and sorts using mergesort. I also used google for runtime analysis. Below is python code I made to sort array:
+RESOURCES USED: Originally coded in python and used ai to convert to js where function takes in array and sorts using mergesort. I also used google/ai for runtime analysis. Below is python code I made to sort array:
 
 mergesort code:
 
