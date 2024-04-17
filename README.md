@@ -125,5 +125,5 @@ Outer Loop (curr_size): The outer loop iterates log n times, n being the number 
 
 Inner Loop (left_start): In each iteration of the outer loop, the inner loop iterates over the array. The number of iterations in the inner loop is dependent on the size of the subarrays. It is at most $\frac{n}{\text{currsize}}$. So the inner loop is $\Theta(n)$.
 
-
+The shifting of elements occurs within the inner loop of the in place mergesort algorithm. In each iteration of the inner loop, elements may need to be shifted to make space for the element being merged.
 
